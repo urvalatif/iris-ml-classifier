@@ -2,3 +2,6 @@ numpy
 pandas
 scikit-learn
 joblib
+onnx
+onnxruntime
+skl2onnx
