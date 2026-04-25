@@ -4,4 +4,6 @@ scikit-learn
 joblib
 onnx
 onnxruntime
+onnxscript
 skl2onnx
+torch
