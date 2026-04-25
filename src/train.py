@@ -1,7 +1,7 @@
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report, accuracy_score
+from sklearn.metrics import classification_report, accuracy_score, confusion_matrix
 import joblib
 import os
 
@@ -31,8 +31,13 @@ def train_model():
 
     # Evaluate model
     accuracy = accuracy_score(y_test, y_pred)
+    matrix = confusion_matrix(y_test, y_pred)
 
     print("Model Accuracy:", accuracy)
+
+    print("\nConfusion Matrix:")
+    print(matrix)
+
     print("\nClassification Report:")
     print(classification_report(y_test, y_pred, target_names=iris.target_names))
 
@@ -45,4 +50,3 @@ def train_model():
 
 if __name__ == "__main__":
     train_model()
-    
