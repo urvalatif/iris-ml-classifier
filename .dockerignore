@@ -1,0 +1,11 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+README.md
+.ipynb_checkpoints/
+models/*.onnx
+models/*.pth
+models/*.engine
